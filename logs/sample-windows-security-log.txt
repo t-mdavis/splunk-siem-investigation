@@ -1,0 +1,14 @@
+EventID: 4624
+Account Name: TM-DAVIS
+Logon Type: 3
+Source Network Address: 192.168.1.24
+Status: SUCCESS
+Timestamp: 2025-01-12 14:22:51
+
+EventID: 4625
+Account Name: Administrator
+Logon Type: 3
+Source Network Address: 192.168.1.44
+Status: FAILED
+Failure Reason: Unknown user name or bad password
+Timestamp: 2025-01-12 14:25:10

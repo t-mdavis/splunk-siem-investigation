@@ -1,0 +1,6 @@
+index=security_logs (EventID=4625 OR EventID=4624)
+| stats count by Account_Name, Source_Network_Address, EventID
+| eval failed_logins = if(EventID=4625, count, 0)
+| eval success_logins = if(EventID=4624, count, 0)
+| where failed_logins > 5 AND success_logins = 0
+| table Account_Name, Source_Network_Address, failed_logins
